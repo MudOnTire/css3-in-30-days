@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      position: relative;
+    }
+
+    div {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      border: 100px solid transparent;
+      border-left-color: lightcoral;
+      border-right-color: lightsalmon;
+      border-top-color: lightgreen;
+      border-bottom-color: lightblue;
+      animation: shrink 1s linear 1s 1 forwards,
+        only-left 1s linear 2s 1 forwards,
+        only-bottom 1s linear 3s 1 forwards,
+        only-right 1s linear 4s 1 forwards,
+        only-top 1s linear 5s 1 forwards;
+    }
+
+    @keyframes shrink {
+      from {
+        width: 100px;
+        height: 100px;
+      }
+
+      to {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    @keyframes only-left {
+      to {
+        border-right-width: 0;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+      }
+    }
+
+    @keyframes only-bottom {
+      to {
+        border-top-width: 0;
+        border-right-width: 100px;
+        border-bottom-color: lightblue;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+      }
+    }
+
+    @keyframes only-right {
+      to {
+        border-left-width: 0;
+        border-top-width: 100px;
+        border-right-color: lightsalmon;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+      }
+    }
+
+    @keyframes only-top {
+      to {
+        border-bottom-width: 0;
+        border-left-width: 100px;
+        border-top-color: lightgreen;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div></div>
+</body>
+
+</html>
