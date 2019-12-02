@@ -1,0 +1,19 @@
+.img{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 100px;
+}
+
+img{
+  height: 100%;   
+  width: auto;
+}
+
+.img1{
+  clip-path: circle(50% at 50% 50%);
+}
+
+.img2{
+  
+}

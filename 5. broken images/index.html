@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .image {
+      position: relative;
+      display: inline-block;
+      font-size: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .image::after {
+      content: ""attr(alt);
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-width: 200px;
+      padding: 10px 20px 10px 25px;
+      border: dashed 1px #888;
+      background: #f0f0f0 url("./camera-off.svg") no-repeat 15px 7px;
+      background-size: 10%;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <img class="image" src="./fakeurl.png" alt="image not found">
+</body>
+
+</html>
