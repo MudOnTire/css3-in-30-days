@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    img {
+      width: 500px;
+      /* display: block; */
+      margin: 30px;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+    }
+
+    img:hover {
+      cursor: crosshair;
+    }
+
+    .grayscale {
+      filter: grayscale(0.8);
+      -webkit-filter: grayscale(0.8);
+    }
+
+    .grayscale:hover {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+    }
+
+    .blur {
+      filter: blur(3px);
+      -webkit-filter: blur(3px);
+    }
+
+    .blur:hover {
+      filter: blur(0);
+      -webkit-filter: blur(0);
+    }
+
+    .invert {
+      filter: invert(1);
+      -webkit-filter: invert(1);
+    }
+
+    .invert:hover {
+      filter: invert(0);
+      -webkit-filter: invert(0);
+    }
+
+    .sepia {
+      filter: sepia(1);
+      -webkit-filter: sepia(1);
+    }
+
+    .sepia:hover {
+      filter: sepia(0);
+      -webkit-filter: sepia(0);
+    }
+  </style>
+</head>
+
+<body>
+  <img class="grayscale" src="https://unsplash.it/500/300?image=1074">
+  <img class="blur" src="https://unsplash.it/500/300?image=1055">
+  <img class="invert" src="https://unsplash.it/500/300?image=1000">
+  <img class="sepia" src="https://unsplash.it/500/300?image=1023">
+</body>
+
+</html>
